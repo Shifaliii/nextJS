@@ -467,16 +467,23 @@ const styles: { [key: string]: React.CSSProperties } = {
   alignItems: "center",
   perspective: "1000px",
   marginBottom: "20px",
-  width: "100%",
+  width: "100%", // full width
+  textAlign: "center", // helps inline img
 },
 
+
   profileImage: {
-    borderRadius: "50%",
-    objectFit: "cover",
-    border: "4px solid #38bdf8",
-    transition: "transform 0.8s",
-    transformStyle: "preserve-3d",
-  },
+  borderRadius: "50%",
+  objectFit: "cover",
+  border: "4px solid #38bdf8",
+  transition: "transform 0.8s",
+  transformStyle: "preserve-3d",
+  maxWidth: "100%",     // prevent overflow
+  height: "auto",       // keep aspect ratio
+  display: "block",     // center properly inside flex
+  margin: "0 auto",     // center horizontally
+},
+
   projectsSection: { width: "100vw", padding: "80px 40px", backgroundColor: "#020617" },
   projectCardWrapper: { minWidth: "250px" },
   projectCard: {
