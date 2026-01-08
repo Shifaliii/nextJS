@@ -461,7 +461,15 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: "0.2s",
   },
   techLogo: {},
-  profileWrapper: { width: "190px", height: "190px", perspective: "1000px", marginBottom: "20px" },
+  profileWrapper: {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  perspective: "1000px",
+  marginBottom: "20px",
+  width: "100%",
+},
+
   profileImage: {
     borderRadius: "50%",
     objectFit: "cover",
